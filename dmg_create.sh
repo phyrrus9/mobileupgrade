@@ -1,5 +1,6 @@
 #!/bin/sh
 # this is for the mac itself, creates a dmg file of the freeze directory
+# taken from http://hints.macworld.com/article.php?story=20020311215452999
 # Creates a disk image (dmg) on Mac OS X from the command line.
 # usage:
 #    mkdmg <volname> <vers> <srcdir>
