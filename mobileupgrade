@@ -1,0 +1,8 @@
+# mobileupgrade main program, does the client-side extraction
+# copyright Ethan Laur (phyrrus9) <phyrrus9@gmail.com>
+unzip -o /var/mobile/MU.freeze -d /var/mobile
+rm /var/mobile/MU.freeze
+mkdir /MU
+mount -t hfsplus -o loop /var/mobile/MU.dmg /MU
+# begin copying the files
+cp -frv /MU/* /
